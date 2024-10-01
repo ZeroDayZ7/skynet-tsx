@@ -1,0 +1,8 @@
+{
+    "editor.wordWrapColumn": 300,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?.",
+    "editor.wordWrap": "off",
+    "printWidth": 200,
+    "editor.suggest.matchOnWordStartOnly": true,
+    "editor.fontWeight": "normal"
+}

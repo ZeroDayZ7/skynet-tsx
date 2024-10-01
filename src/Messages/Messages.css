@@ -1,0 +1,117 @@
+
+.btn-msg{
+  min-height: 30px;
+}
+.messages-container {
+  display: flex;
+  max-width: 800px;
+  height: 90vh; /* Zajmuje 90% wysokości okna przeglądarki */
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.conversation-messages {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Dodany pionowy pasek przewijania w przypadku potrzeby */
+}
+
+.conversations {
+  display: flex;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.conversation {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.conversation.active {
+  background-color: #919191;
+}
+
+.conversation-messages {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sent {
+  text-align: right;
+  background-color: #636363;
+}
+
+.received {
+  text-align: left;
+  background-color: #303030;
+}
+
+.message-text {
+  font-size: 16px;
+}
+
+.message-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.no-conversation-text-low{
+  font-size: 10px;
+}
+.msg-hr{
+  width: 100%;
+}
+.message-input textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.message-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-conversation-button,
+.search-friends-button,
+.attachment-button,
+.image-button,
+.send-button {
+  /* background-color: #007bff; */
+  /* color: #fff; */
+}
+
+.new-conversation-button:hover,
+.search-friends-button:hover,
+.attachment-button:hover,
+.image-button:hover,
+.send-button:hover {
+  background-color: #0056b3;
+}

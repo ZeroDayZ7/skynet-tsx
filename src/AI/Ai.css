@@ -1,0 +1,63 @@
+.video-container {
+  padding: 10px;
+  display: flex;
+}
+
+.full-image-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.full-image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.image-gallery-container {
+  max-height: 95vh;
+  /* Ustaw maksymalną wysokość kontenera */
+  overflow-y: auto;
+  /* Dodaj pasek przewijania tylko w pionie */
+}
+
+.image-gallery {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading {
+  filter: blur(10px);
+  clip-path: inset(0);
+  /* visibility: hidden; */
+}
+
+.loaded {
+  /* visibility: visible; */
+  filter: blur(0px);
+  transition: filter 0.5s linear;
+}
+
+.imgwh {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}

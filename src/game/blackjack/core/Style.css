@@ -1,0 +1,27 @@
+.Player>h2, .Crupier>h2 {
+  font-size: 24px;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-size{
+  width: 70px;
+}
+@media (max-width: 600px) {
+  .Player>h2 {
+    font-size: 0.75rem;
+  }
+  .btn{
+    padding: 6px!important;
+    width: 100px!important;
+  }
+  .Player>h2, .Crupier>h2 {
+    font-size: 14px;
+  }
+  .card-size{
+    width: 60px;
+  }
+}
